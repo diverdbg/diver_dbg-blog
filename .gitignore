@@ -1,6 +1,9 @@
 # Local posting script — never push this
 add_entry.py
 
+# Claude Code local data — never push this
+.claude/
+
 # Python
 __pycache__/
 *.pyc
