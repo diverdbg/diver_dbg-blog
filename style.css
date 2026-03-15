@@ -5,23 +5,24 @@
 }
 
 :root {
-  --bg:      #f7f2ea;
-  --text:    #2d2420;
-  --muted:   #8a7468;
-  --border:  #ddd4c3;
-  --link:    #5c4a3a;
-  --accent:  #9b8572;
+  --bg:      #111111;
+  --surface: #1a1a1a;
+  --text:    #c8c8c8;
+  --muted:   #555555;
+  --border:  #252525;
+  --link:    #7aad8a;
+  --accent:  #7aad8a;
 }
 
 html {
-  font-size: 18px;
+  font-size: 17px;
 }
 
 body {
   background-color: var(--bg);
   color: var(--text);
-  font-family: Georgia, 'Times New Roman', serif;
-  line-height: 1.8;
+  font-family: Consolas, 'Cascadia Code', 'Courier New', monospace;
+  line-height: 1.85;
   padding: 2rem 1rem;
   max-width: 660px;
   margin: 0 auto;
@@ -37,22 +38,21 @@ header {
 
 .blog-name {
   display: block;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: normal;
-  letter-spacing: 0.04em;
-  color: var(--text);
+  letter-spacing: 0.06em;
+  color: var(--accent);
   text-decoration: none;
 }
 
 .blog-name:hover {
-  color: var(--accent);
+  color: var(--text);
 }
 
 .blog-tagline {
-  font-size: 0.85rem;
+  font-size: 0.78rem;
   color: var(--muted);
-  margin-top: 0.25rem;
-  font-style: italic;
+  margin-top: 0.3rem;
 }
 
 /* ── Entry list (index) ── */
@@ -87,24 +87,24 @@ header {
 
 .entry-date {
   display: block;
-  font-size: 0.78rem;
-  letter-spacing: 0.08em;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
   color: var(--muted);
   text-transform: uppercase;
   margin-bottom: 0.4rem;
 }
 
 .entry-title {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: normal;
-  line-height: 1.4;
+  line-height: 1.5;
   margin-bottom: 0.6rem;
 }
 
 .entry-excerpt {
-  font-size: 0.92rem;
+  font-size: 0.85rem;
   color: var(--muted);
-  line-height: 1.7;
+  line-height: 1.75;
 }
 
 /* ── Single entry page ── */
@@ -114,9 +114,10 @@ header {
 }
 
 .entry > .entry-title {
-  font-size: 1.5rem;
-  line-height: 1.35;
+  font-size: 1.2rem;
+  line-height: 1.4;
   margin-bottom: 0.5rem;
+  color: var(--text);
 }
 
 .entry > .entry-date {
@@ -135,7 +136,7 @@ header {
   margin-top: 3rem;
   padding-top: 1.25rem;
   border-top: 1px solid var(--border);
-  font-size: 0.88rem;
+  font-size: 0.82rem;
 }
 
 .entry-nav a {
@@ -153,7 +154,7 @@ footer {
   margin-top: 4rem;
   padding-top: 1.25rem;
   border-top: 1px solid var(--border);
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   color: var(--muted);
   text-align: center;
 }
@@ -162,6 +163,5 @@ footer {
 
 .empty-state {
   color: var(--muted);
-  font-style: italic;
-  font-size: 0.95rem;
+  font-size: 0.88rem;
 }
